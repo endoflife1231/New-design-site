@@ -1,0 +1,33 @@
+# Ignore everything by default. This repository is prepared as a clean deploy repo.
+/*
+
+# Keep the deployable site bundle.
+!/site/
+!/site/**
+
+# Keep GitHub Pages workflow.
+!/.github/
+!/.github/workflows/
+!/.github/workflows/deploy-pages.yml
+
+# Keep public project documentation.
+!/README.md
+!/.gitignore
+
+# Always ignore local/runtime artifacts, even if created later.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+.playwright-cli/
+output/
+backups/
+
+# Source archives and private/reference materials must not be committed.
+design + prompt/
+export chat/
+old version site/
+skills main/
+диана исходники/
+docs/

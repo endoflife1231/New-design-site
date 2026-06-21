@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Портфолио художницы Дианы: живопись, дневник, архив работ и доступные картины."
+    />
+    <meta name="theme-color" content="#f2ece1" />
+    <title>Диана — живопись как перевод состояний</title>
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="%23f2ece1"/><text x="13" y="48" font-size="46" font-family="serif" fill="%2311100e">D</text></svg>' />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К основному содержанию</a>
+    <div class="paper-grain" aria-hidden="true"></div>
+    <header class="site-header" data-header>
+      <a class="brand" href="#hero" aria-label="Диана, перейти наверх">
+        <span>D</span><i></i><b>Диана</b>
+      </a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#about">О Диане</a>
+        <a href="#works">Работы</a>
+        <a href="#archive">Архив</a>
+        <a href="#available">Наличие</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a class="telegram-link" href="https://t.me/diartka" target="_blank" rel="noreferrer">дневник в Telegram ↗</a>
+        <button class="lang-button" type="button" aria-label="Язык: русский">RU⌄</button>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+          <span></span><span></span><span></span>
+          <b class="sr-only">Открыть меню</b>
+        </button>
+      </div>
+      <div class="header-rule" aria-hidden="true"></div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <button class="close-menu" type="button" data-menu-close>Закрыть ×</button>
+      <a href="#about">О Диане</a>
+      <a href="#works">Работы</a>
+      <a href="#archive">Архив</a>
+      <a href="#available">Наличие</a>
+      <a href="#contact">Контакты</a>
+      <a href="https://t.me/diartka" target="_blank" rel="noreferrer">дневник в Telegram ↗</a>
+    </div>
+
+    <main id="main">
+      <section class="hero section-shell" id="hero" data-section="hero">
+        <div class="hero-copy">
+          <p class="kicker">исходник → холст</p>
+          <h1>Живопись <span>как перевод</span> состояний</h1>
+          <p class="lead">
+            Превращаю городскую тревогу, поп-культурные привязанности, цветы, любовь и трудноуловимые
+            воспоминания в живопись.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#works">Открыть каталог <span>→</span></a>
+            <a class="button secondary" href="#archive">Читать дневник <span>→</span></a>
+          </div>
+          <dl class="stats" data-stats></dl>
+        </div>
+        <div class="hero-collage" aria-label="Коллаж с портретом Дианы и работами">
+          <figure class="photo-card hero-portrait tape-top">
+            <img src="./public/assets/images/portraits/diana-close.webp" width="640" height="640" alt="Диана улыбается на улице" />
+          </figure>
+          <figure class="photo-card hero-poker tape-left">
+            <img src="./public/assets/images/art/poker.webp" width="1350" height="1800" alt="Картина Покер с руками, картами и фишками" />
+          </figure>
+          <figure class="photo-card hero-zaliv">
+            <img src="./public/assets/images/art/zaliv.webp" width="1350" height="1800" alt="Картина Залив с серым небом и красной линией горизонта" />
+          </figure>
+          <figure class="photo-card hero-horses">
+            <img src="./public/assets/images/art/with-you.webp" width="1105" height="1280" alt="Две белые лошади на чёрном фоне" />
+          </figure>
+          <figure class="video-card hero-video tape-top">
+            <video src="./public/assets/videos/hero-zaliv.mp4" muted loop playsinline preload="metadata" poster="./public/assets/images/art/zaliv.webp"></video>
+            <span>0:18</span>
+          </figure>
+          <p class="hand note-hero">иногда воспоминание приходит позже, чем картина</p>
+          <p class="hand note-process">процесс:<br />из студии ↗</p>
+        </div>
+        <div class="stamp">мастерская в Петербурге<br />живопись, холст, масло</div>
+      </section>
+
+      <section class="about section-shell" id="about" data-section="about">
+        <div class="section-label">О Диане</div>
+        <div class="about-grid">
+          <div>
+            <h2>Не витрина красивых картинок, <span>а место, где работа получает голос</span></h2>
+            <p>
+              Я — художница и студентка-переводчица. Слова — мой второй язык. Но главный — живопись.
+              Я перевожу не фразы, а то, что трудно сказать вслух.
+            </p>
+          </div>
+          <figure class="photo-card about-photo tape-top">
+            <img src="./public/assets/images/portraits/diana-gallery.webp" width="640" height="640" alt="Портрет Дианы в студийной атмосфере" />
+            <figcaption class="paper-note hand">живопись — мой способ переводить состояния</figcaption>
+          </figure>
+          <blockquote>
+            Картины — это ещё один способ <span>перевода</span>. Только не слов, а <span>состояний</span>
+          </blockquote>
+        </div>
+        <div class="directions" data-directions></div>
+        <div class="stamp">мастерская в Петербурге<br />живопись, холст, масло</div>
+      </section>
+
+      <section class="works section-shell" id="works" data-section="works">
+        <div class="works-head">
+          <div>
+            <h2>Работы</h2>
+            <p>Подборка оригинальных работ. Каждая картина — часть личного дневника и попытка перевести состояния в живопись.</p>
+          </div>
+          <p class="hand">живопись, холст, масло<br /><u>2018—2026</u></p>
+          <form class="catalog-tools" role="search" data-catalog-form>
+            <label class="sr-only" for="search">Поиск по названию, теме, году</label>
+            <input id="search" name="search" type="search" placeholder="Поиск по названию, теме, году..." autocomplete="off" />
+            <select name="sort" aria-label="Сортировка">
+              <option value="new">Сначала новые</option>
+              <option value="old">Сначала старые</option>
+              <option value="title">По названию</option>
+            </select>
+            <div class="view-toggle" role="group" aria-label="Вид каталога">
+              <button type="button" class="is-active" data-view="grid">▦ <span>Сетка</span></button>
+              <button type="button" data-view="list">☷ <span>Список</span></button>
+            </div>
+          </form>
+        </div>
+        <div class="categories" data-categories aria-label="Категории работ"></div>
+        <div class="catalog-meta"><span data-result-count></span></div>
+        <div class="artworks-grid" data-artworks></div>
+        <div class="empty-state" data-empty hidden>
+          <h3>По этим меткам ничего не найдено</h3>
+          <p>Попробуйте изменить запрос или вернуться к полному архиву.</p>
+          <p class="hand">архив иногда прячет самое нужное</p>
+          <button class="button secondary" type="button" data-reset-filters>Показать все работы</button>
+        </div>
+      </section>
+
+      <section class="archive section-shell" id="archive" data-section="archive">
+        <div class="archive-head">
+          <div>
+            <h2>Не только работы, <span>но и среда, из которой они появляются</span></h2>
+            <p>Хронология студийной жизни, полевых заметок и маленьких открытий. Не только финальные работы, но и путь к ним.</p>
+          </div>
+          <aside class="quote-paper">
+            <p>Я рассказываю вам историю о себе и своей семье не для того, чтобы вы меня пожалели. Совсем наоборот.</p>
+            <b>— The Sopranos</b>
+          </aside>
+        </div>
+        <div class="timeline" data-diary></div>
+      </section>
+
+      <section class="available section-shell" id="available" data-section="available">
+        <div class="available-head">
+          <div>
+            <h2>В наличии <span>в студии</span></h2>
+            <p>Оригинальные работы, доступные для приобретения. Каждая картина — часть живого архива мастерской.</p>
+            <p class="hand">пишите в Telegram @lybitik →</p>
+          </div>
+          <aside class="notice">ⓘ Наличие может меняться — пожалуйста, уточняйте перед покупкой.</aside>
+          <a class="telegram-card" href="https://t.me/lybitik" target="_blank" rel="noreferrer">
+            <b>Написать в Telegram<br />@lybitik</b>
+            <span>Отвечаю лично. Быстро уточню детали и помогу с выбором.</span>
+          </a>
+        </div>
+        <div class="inventory" data-inventory></div>
+        <div class="stamp">мастерская в Петербурге<br />живопись, холст, масло</div>
+      </section>
+
+      <section class="contact section-shell" id="contact" data-section="contact">
+        <div class="contact-top">
+          <div>
+            <h2>Покупка, выставка, <span>коллаборация</span> или просто маякнуть</h2>
+            <p>Пишите — обсудим работу, идею, сотрудничество или просто поздороваемся.</p>
+            <ul class="social-lines">
+              <li><span>портфолио в Telegram</span><a href="https://t.me/diartka" target="_blank" rel="noreferrer">@diartka →</a></li>
+              <li><span>личный Telegram</span><a href="https://t.me/lybitik" target="_blank" rel="noreferrer">@lybitik →</a></li>
+              <li><span>TikTok</span><a href="https://www.tiktok.com/@diartka" target="_blank" rel="noreferrer">@diartka →</a></li>
+            </ul>
+          </div>
+          <figure class="photo-card contact-photo tape-top">
+            <img src="./public/assets/images/portraits/diana-forest.webp" width="640" height="640" alt="Диана на фоне леса" />
+          </figure>
+        </div>
+        <div class="contact-panel">
+          <form class="contact-form" novalidate data-contact-form>
+            <h3><span>1</span> Заполните форму</h3>
+            <label>Имя <input name="name" type="text" placeholder="Ваше имя" autocomplete="name" /></label>
+            <label>Контакт <input name="contact" type="text" placeholder="Telegram, e-mail или телефон" autocomplete="email" /></label>
+            <label>Сообщение <textarea name="message" rows="5" placeholder="Расскажите, о чём ваш запрос"></textarea></label>
+            <p class="form-note">Сайт без backend: сообщение не отправляется автоматически. Мы подготовим текст для Telegram.</p>
+            <button class="button primary" type="submit">Подготовить сообщение <span>→</span></button>
+          </form>
+          <div class="generated-panel" data-generated hidden>
+            <h3><span>3</span> Готово! Сообщение сгенерировано</h3>
+            <p class="success">Готово! Ваше сообщение подготовлено для Telegram.</p>
+            <label>Ваше сообщение<textarea readonly rows="8" data-generated-text></textarea></label>
+            <div class="generated-actions">
+              <button class="button primary" type="button" data-copy>Копировать текст</button>
+              <a class="button secondary" href="https://t.me/lybitik" target="_blank" rel="noreferrer" data-telegram-open>Открыть Telegram <span>→</span></a>
+            </div>
+            <p class="hand">скопируйте и отправьте в Telegram или откройте чат с вами.</p>
+          </div>
+        </div>
+        <button class="back-top" type="button" data-back-top>↑ Наверх</button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="stamp">мастерская в Петербурге<br />живопись, холст, масло</div>
+      <nav aria-label="Навигация в подвале">
+        <a href="#about">О Диане</a>
+        <a href="#works">Работы</a>
+        <a href="#archive">Архив</a>
+        <a href="#available">Наличие</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <small>© Диана, 2026</small>
+    </footer>
+
+    <div class="artwork-overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title" hidden data-overlay></div>
+    <div class="image-viewer" role="dialog" aria-modal="true" aria-label="Просмотр изображения" hidden data-viewer></div>
+    <div class="toast" role="status" aria-live="polite" hidden data-toast></div>
+  </body>
+</html>
